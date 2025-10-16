@@ -39,30 +39,32 @@ Tái hiện và khám phá cuộc sống thời kỳ bao cấp Việt Nam (1976-
 
 ## Công Nghệ Sử Dụng
 
-- **Frontend**: React 18 + TypeScript
-- **Build Tool**: Vite
+- **Frontend**: Next.js 15 + React 18 + TypeScript
 - **Styling**: Tailwind CSS v4
 - **Fonts**: Playfair Display, Courier Prime, Noto Serif
 
 ## Cấu Trúc Dự Án
 
-\`\`\`
-src/
-├── components/
-│   ├── home/          # Các component trang chủ
-│   ├── layout/        # Header, Footer
-│   └── ui/            # UI components tái sử dụng
-├── pages/             # Các trang chính
-├── data/              # Mock data
-├── types/             # TypeScript types
-├── utils/             # Helper functions
-├── config/            # Configuration files
-└── index.css          # Global styles
-\`\`\`
+```
+app/                   # Next.js App Router
+├── layout.tsx         # Root layout
+├── page.tsx          # Home page
+├── game/page.tsx     # Game page
+├── dictionary/page.tsx # Dictionary page
+└── ...               # Other pages
+
+src/                   # Source code
+├── components/        # React components
+├── pages/            # Page components
+├── data/             # Mock data
+├── types/            # TypeScript types
+├── utils/            # Helper functions
+└── config/           # Configuration files
+```
 
 ## Cài Đặt và Chạy
 
-\`\`\`bash
+```bash
 # Cài đặt dependencies
 npm install
 
@@ -72,9 +74,9 @@ npm run dev
 # Build cho production
 npm run build
 
-# Preview production build
-npm run preview
-\`\`\`
+# Start production server
+npm start
+```
 
 ## Thiết Kế
 
