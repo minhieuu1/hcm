@@ -38,9 +38,19 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <VintageButton variant="primary" size="sm">
+            {/* <VintageButton variant="primary" size="sm">
               Đăng Ký
-            </VintageButton>
+            </VintageButton> */}
+            <Link
+  href="https://metasteps.com/viewer/e0df49ab-3744-49c7-b071-09a2d4c1e6d5"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <VintageButton variant="primary" size="sm" fullWidth>
+    Bảo Tàng
+  </VintageButton>
+</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,11 +83,24 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
+              {/* <div className="px-4 pt-2">
                 <VintageButton variant="primary" size="sm" fullWidth>
-                  Đăng Ký
+                  Bảo Tàng
                 </VintageButton>
-              </div>
+              </div> */}
+              <div className="px-4 pt-2">
+  <Link
+    href="https://metasteps.com/viewer/e0df49ab-3744-49c7-b071-09a2d4c1e6d5"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <VintageButton variant="primary" size="sm" fullWidth>
+      Bảo Tàng
+    </VintageButton>
+  </Link>
+</div>
+
             </nav>
           </div>
         )}

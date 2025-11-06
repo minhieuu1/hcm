@@ -2,6 +2,7 @@ import VintageButton from "../ui/VintageButton"
 import VintageCard from "../ui/VintageCard"
 import SectionHeader from "../ui/SectionHeader"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function GamePreviewSection() {
   const gameModes = [
@@ -80,9 +81,19 @@ export default function GamePreviewSection() {
             ))}
 
             <div className="pt-4">
-              <VintageButton variant="primary" size="lg">
+              {/* <VintageButton variant="primary" size="lg">
                 Chơi Ngay
-              </VintageButton>
+              </VintageButton> */}
+              <Link
+  href="https://studio--studio-4180766341-3aef5.us-central1.hosted.app"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <VintageButton variant="primary"  size="lg">
+    Chơi Ngay
+  </VintageButton>
+</Link>
             </div>
           </div>
         </div>
