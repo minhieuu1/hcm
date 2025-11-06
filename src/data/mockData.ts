@@ -181,7 +181,7 @@ export const mockMediaItems: MediaItem[] = [
     id: "7",
     title: "Tuyên Truyền Kế Hoạch",
     type: "document",
-    url: "/vietnamese-propaganda-poster-1980s-socialist.jpg",
+    url: "/dh-lan-1-anh-dai-dien-1266-6722.jpg",
     description: "Áp phích tuyên truyền về kế hoạch 5 năm, năm 1976",
     date: "1976-01-01",
     tags: ["tuyên truyền", "kế hoạch", "chính trị"],
