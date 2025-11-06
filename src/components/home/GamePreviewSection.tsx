@@ -1,6 +1,7 @@
 import VintageButton from "../ui/VintageButton"
 import VintageCard from "../ui/VintageCard"
 import SectionHeader from "../ui/SectionHeader"
+import Image from "next/image"
 
 export default function GamePreviewSection() {
   const gameModes = [
@@ -28,7 +29,7 @@ export default function GamePreviewSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Game preview image */}
-          <div className="order-2 lg:order-1">
+          {/* <div className="order-2 lg:order-1">
             <div className="relative">
               <div className="aspect-[4/3] bg-gradient-to-br from-sepia-dark to-sepia-medium rounded-lg overflow-hidden border-4 border-primary shadow-2xl">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -37,6 +38,22 @@ export default function GamePreviewSection() {
                     <p className="font-heading text-2xl text-paper-white mb-4">Game Demo</p>
                     <p className="text-aged-cream">Sắp ra mắt</p>
                   </div>
+                </div>
+              </div> */}
+              {/* Game preview image */}
+          <div className="order-2 lg:order-1">
+            <div className="relative">
+              <div className="aspect-[4/3] bg-gradient-to-br from-sepia-dark to-sepia-medium rounded-lg overflow-hidden border-4 border-primary shadow-2xl">
+                {/* Thay thế nội dung cũ bằng hình ảnh */}
+                <div className="absolute inset-0 flex items-center justify-center p-4">
+                  {/* Sử dụng component Image của Next.js để tối ưu hóa hình ảnh */}
+                  <Image 
+                    src="/QR_game.png" // Đường dẫn đến file QR_game.png trong thư mục public
+                    alt="Mã QR game"
+                    layout="fill" // Để hình ảnh lấp đầy div cha
+                    objectFit="contain" // Đảm bảo hình ảnh được căn chỉnh và không bị cắt
+                    className="rounded-lg" // Thêm các class Tailwind nếu cần
+                  />
                 </div>
               </div>
               {/* Decorative stamp */}
